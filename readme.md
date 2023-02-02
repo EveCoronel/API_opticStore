@@ -9,6 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them:
 
 [Node.js](https://nodejs.org/en/)
+
 [NPM (comes with Node.js)](https://www.npmjs.com/https://www.npmjs.com/)
 
 ### Installing
@@ -16,7 +17,7 @@ A step by step series of examples that tell you how to get a development environ
 
 #### Clone the repository to your local machine:
 
-1. git clone https://github.com/EveCoronel/Api_opticStore
+1. git clone https://github.com/EveCoronel/API_opticStore
 
 2. Install the dependencies:
 
@@ -47,6 +48,7 @@ The following endpoints are available in the Optic Store API:
 ### Built With
 
 Express - The web framework used
+
 JavaScript - The programming language used
 
 
