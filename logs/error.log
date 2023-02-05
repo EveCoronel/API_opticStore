@@ -1,0 +1,25 @@
+{"level":50,"time":1675605267248,"pid":7328,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: TypeError: api.getAll is not a function"}
+{"level":50,"time":1675618880717,"pid":13992,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: TypeError: Cannot read properties of undefined (reading 'getAll')"}
+{"level":50,"time":1675619041965,"pid":9044,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: ReferenceError: HttpError is not defined"}
+{"level":50,"time":1675619088222,"pid":7608,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: ReferenceError: HttpError is not defined"}
+{"level":50,"time":1675619091197,"pid":7608,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: ReferenceError: HttpError is not defined"}
+{"level":50,"time":1675619127526,"pid":9628,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: ReferenceError: HttpError is not defined"}
+{"level":50,"time":1675619173358,"pid":10768,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: ReferenceError: HttpError is not defined"}
+{"level":50,"time":1675619228678,"pid":10768,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: ReferenceError: HttpError is not defined"}
+{"level":50,"time":1675619245242,"pid":13384,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: ReferenceError: HTTP_STATUS is not defined"}
+{"level":50,"time":1675619271568,"pid":13968,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: TypeError: Class constructor HttpError cannot be invoked without 'new'"}
+{"level":50,"time":1675619317039,"pid":11204,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: [object Object]"}
+{"level":50,"time":1675619345955,"pid":11204,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: [object Object]"}
+{"level":50,"time":1675619415676,"pid":13044,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: [object Object]"}
+{"level":50,"time":1675619513074,"pid":2112,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: [object Object]"}
+{"level":50,"time":1675619556974,"pid":2112,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: [object Object]"}
+{"level":50,"time":1675619573645,"pid":12140,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: [object Object]"}
+{"level":50,"time":1675619696774,"pid":9224,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: [object Object]"}
+{"level":50,"time":1675620197680,"pid":1880,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: TypeError: this.CartsDao.emptyCart is not a function"}
+{"level":50,"time":1675620672470,"pid":13516,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"Glasses\" (type string) at path \"_id\" for model \"products\""}
+{"level":50,"time":1675620705207,"pid":2336,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"Glasses\" (type string) at path \"_id\" for model \"products\""}
+{"level":50,"time":1675620768412,"pid":9496,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: TypeError: this.productsDao.getProductsByCategory is not a function"}
+{"level":50,"time":1675621081373,"pid":6084,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"filter\" (type string) at path \"_id\" for model \"products\""}
+{"level":50,"time":1675621293209,"pid":1752,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"filter\" (type string) at path \"_id\" for model \"products\""}
+{"level":50,"time":1675621359216,"pid":11320,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"filter\" (type string) at path \"_id\" for model \"products\""}
+{"level":50,"time":1675621431806,"pid":13668,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"filter\" (type string) at path \"_id\" for model \"products\""}

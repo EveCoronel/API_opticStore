@@ -1,9 +1,10 @@
 const envConfig = require("../config/env.config");
 const { getDAOS } = require("../models/dao/daos.factory");
 
-class AuthApi {
+class UsersApi {
   constructor() {
-    this.AuthDao = getDAOS(envConfig.DATASOURCE).authDao;
+    this.UsersDao = getDAOS(envConfig.DATASOURCE).usersDao;
   }
 }
 
+module.exports = UsersApi;

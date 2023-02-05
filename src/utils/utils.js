@@ -1,8 +1,7 @@
-const envConfig = require("../config");
 const mailgun = require("mailgun-js");
 const logger = require("../logger/logger");
 const twilio = require("twilio");
-
+const envConfig = require("../config/env.config");
 const twilioClient = twilio(
   envConfig.TWILIO_ACCOUNT_SID,
   envConfig.TWILIO_AUTH_TOKEN

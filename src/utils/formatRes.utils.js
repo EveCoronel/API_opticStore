@@ -18,7 +18,7 @@ const errorResponse = (error, statusCode = 200) => {
   return {
     success: false,
     statusCode,
-    message: error,
+    details: error,
   };
 };
 

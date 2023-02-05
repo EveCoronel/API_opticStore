@@ -37,10 +37,13 @@ The API should now be up and running on http://localhost:8080/.
 The following endpoints are available in the Optic Store API:
 
 ## Product Endpoints
-- GET /products: Retrieve a list of all products
-- GET /products/:id: Retrieve a specific product by ID
-- POST /products: Create a new product
-- DELETE /products/:id: Delete a specific product by ID
+- GET /api/products: Retrieve a list of all products
+- GET /api/products/:_id: Retrieve a specific product by ID
+- GET /api/products/filter/:category: Retrieve a list of specific products by category
+- POST /api/products/: Create a new product
+- PUT /api/products/:_id: Update a product
+- DELETE /products/:_id: Delete a specific product by ID
+
 
 ### Order Endpoints
 

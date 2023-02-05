@@ -1,19 +1,20 @@
-const mongoose = require('mongoose');
-const { HTTP_STATUS } = require('../../constants/api.constants');
-const dbConfig = require('../../db/db.config');
-const { HttpError } = require('../../utils/utils');
+const mongoose = require("mongoose");
+const { HTTP_STATUS } = require("../../constants/api.constants");
+const dbConfig = require("../../config/db.config");
+const { HttpError } = require("../../utils/formatRes.utils");
 
-class MongoContainer {
+mongoose.set('strictQuery', false);
 
+class MongoRepository {
   constructor(collection, schema) {
     this.model = mongoose.model(collection, schema);
   }
 
-  async connect() {
+  static async connect() {
     await mongoose.connect(dbConfig.mongodb.uri);
   }
 
-  async disconnect() {
+  static async disconnect() {
     await mongoose.disconnect();
   }
 
@@ -53,4 +54,4 @@ class MongoContainer {
   }
 }
 
-module.exports = MongoContainer;
+module.exports = MongoRepository;

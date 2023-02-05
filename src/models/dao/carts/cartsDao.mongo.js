@@ -1,31 +1,27 @@
-const { HttpError } = require('../../../utils/utils')
-const { HTTP_STATUS } = require('../../../constants/api.constants')
-const MongoContainer = require('../../containers/mongo.container')
+const MongoRepository = require('../../Repository/mongo.repository')
 const Products = require('../products/productsDao.mongo')
 const cartSchema = require('../../schemas/Cart.schema')
+const { HTTP_STATUS } = require('../../../constants/api.constants')
+const { HttpError } = require('../../../utils/formatRes.utils')
 
 const productsDao = new Products();
 const collection = 'carts'
 
-class DaoCartsMongo extends MongoContainer {
+class DaoCartsMongo extends MongoRepository {
     constructor() {
         super(collection, cartSchema)
     }
 
 
-    async createCart() {
-        let item = {
-            timestrap: Date.now(),
-            products: []
-        }
-        const newDocument = new this.model(item);
+    async createCart(cartPayload) {
+        const newDocument = new this.model(cartPayload);
         return await newDocument.save();
     }
 
-    async getProductsInCart(id) {
-        const document = await this.model.findOne({ _id: id }, { __v: 0 });
+    async getProductsInCart(_id) {
+        const document = await this.model.findOne({ _id: _id }, { __v: 0 });
         if (!document) {
-            const message = `Resource with id ${id} does not exist in our records`;
+            const message = `Resource with id ${_id} does not exist in our records`;
             throw new HttpError(HTTP_STATUS.NOT_FOUND, message);
         }
         let products = []
@@ -47,37 +43,37 @@ class DaoCartsMongo extends MongoContainer {
         return products;
     }
 
-    async addProduct(id, idProducto) {
+    async addProduct(_id, idProd) {
         const updatedDocument = await this.model.updateOne(
-            { _id: id },
-            { $push: { products: idProducto } }
+            { _id: _id },
+            { $push: { products: idProd } }
         );
         if (!updatedDocument.matchedCount) {
-            const message = `Resource with id ${id} does not exist in our records`;
+            const message = `Resource with id ${_id} does not exist in our records`;
             throw new HttpError(HTTP_STATUS.NOT_FOUND, message);
         }
         return updatedDocument;
     }
 
-    async deleteProductById(idCart, idProd) {
+    async deleteProductById(_id, idProd) {
         const updatedDocument = await this.model.updateOne(
-            { _id: idCart },
+            { _id: _id },
             { $pull: { products: idProd } }
         );
         if (!updatedDocument.matchedCount) {
-            const message = `Resource with id ${idProd} does not exist in our records`;
+            const message = `Resource with id ${_id} does not exist in our records`;
             throw new HttpError(HTTP_STATUS.NOT_FOUND, message);
         }
         return updatedDocument;
     }
 
-    async delete(idCart) {
+    async emptyCart(_id) {
         const updatedCart = await this.model.updateOne(
-            { _id: idCart },
+            { _id: _id },
             { products: [] }
         );
         if (!updatedCart.matchedCount) {
-            const message = `Resource with id ${idCart} does not exist in our records`;
+            const message = `Resource with id ${_id} does not exist in our records`;
             throw new HttpError(HTTP_STATUS.NOT_FOUND, message);
         }
         return updatedCart;
