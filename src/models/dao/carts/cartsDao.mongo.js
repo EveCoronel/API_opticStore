@@ -1,10 +1,9 @@
 const MongoRepository = require('../../Repository/mongo.repository')
-const Products = require('../products/productsDao.mongo')
+const productsDao = require('../products/productsDao.mongo')
 const cartSchema = require('../../schemas/Cart.schema')
 const { HTTP_STATUS } = require('../../../constants/api.constants')
 const { HttpError } = require('../../../utils/formatRes.utils')
 
-const productsDao = new Products();
 const collection = 'carts'
 
 class DaoCartsMongo extends MongoRepository {
@@ -81,4 +80,4 @@ class DaoCartsMongo extends MongoRepository {
 
 }
 
-module.exports = DaoCartsMongo;
+module.exports = new DaoCartsMongo();

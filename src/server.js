@@ -11,14 +11,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use("/api", apiRoutes);
 
-const server = app.listen(+envConfig.PORT, () => {
+app.use("/api", apiRoutes);
+const server = app.listen(+envConfig.PORT || 8080, () => {
   MongoRepository.connect().then(() => {
     logger.info("Connected to DB!");
   });
   logger.info(`Using ${envConfig.DATASOURCE} as data source`);
-  logger.info(`Server is up an running on port ${envConfig.PORT}`);
+  logger.info(`Server is up an running on port ${envConfig.PORT || 8080}`);
 });
 
 server.on("error", (err) => {

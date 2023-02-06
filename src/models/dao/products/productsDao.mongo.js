@@ -10,4 +10,4 @@ class Products extends MongoRepository {
 
 }
 
-module.exports = Products;
+module.exports = new Products();

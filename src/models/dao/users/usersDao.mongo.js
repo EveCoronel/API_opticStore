@@ -20,4 +20,4 @@ class Users extends MongoRepository {
   }
 }
 
-module.exports = Users;
+module.exports = new Users();

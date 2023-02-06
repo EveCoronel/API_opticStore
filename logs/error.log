@@ -23,3 +23,10 @@
 {"level":50,"time":1675621293209,"pid":1752,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"filter\" (type string) at path \"_id\" for model \"products\""}
 {"level":50,"time":1675621359216,"pid":11320,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"filter\" (type string) at path \"_id\" for model \"products\""}
 {"level":50,"time":1675621431806,"pid":13668,"hostname":"DESKTOP-NIVBK89","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"filter\" (type string) at path \"_id\" for model \"products\""}
+{"level":50,"time":1675652979295,"pid":6240,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: ValidationError: username: Cast to string failed for value \"{ username: 'evelyncoronel05@gmail.com', text: 'Hola, como estas?' }\" (type Object) at path \"username\", text: Path `text` is required."}
+{"level":50,"time":1675653133258,"pid":1172,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: ValidationError: username: Cast to string failed for value \"{ username: 'evelyncoronel05@gmail.com', text: 'Hola, como estas?' }\" (type Object) at path \"username\", text: Path `text` is required."}
+{"level":50,"time":1675653229453,"pid":1056,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: ReferenceError: _id is not defined"}
+{"level":50,"time":1675653290570,"pid":7352,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: ReferenceError: _id is not defined"}
+{"level":50,"time":1675653393369,"pid":7476,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: ReferenceError: HttpError is not defined"}
+{"level":50,"time":1675653414583,"pid":6128,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: [object Object]"}
+{"level":50,"time":1675653594950,"pid":7704,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: [object Object]"}
