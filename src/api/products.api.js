@@ -10,25 +10,19 @@ class ProductsApi {
 
   async getProducts(category = null) {
     if (!category) return this.productsDao.getAll();
-    let filter = {category: category}
+    let filter = { category: category };
     return this.productsDao.getAll(filter);
   }
   async getProductById(_id) {
-    if (!_id)
-      throw HttpError(HTTP_STATUS.BAD_REQUEST, `id must be provided it`);
     return this.productsDao.getById(_id);
   }
   async createProduct(productPayload) {
     return this.productsDao.save(productPayload);
   }
   async updateProduct(_id, productPayload) {
-    if (!_id)
-      throw HttpError(HTTP_STATUS.BAD_REQUEST, `id must be provided it`);
     return this.productsDao.update(_id, productPayload);
   }
   async deleteProduct(_id) {
-    if (!_id)
-      throw HttpError(HTTP_STATUS.BAD_REQUEST, `id must be provided it`);
     return this.productsDao.delete(_id);
   }
 }

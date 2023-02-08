@@ -1,4 +1,7 @@
+const UserDTO = require("../src/models/dtos/users.dto");
 const apiClient = require("./client-test");
+const { getAge } = require("../src/utils/utils");
+const bcrypt = require("bcrypt");
 
 // ====== TEST GET =======
 
@@ -71,3 +74,4 @@ const deleteProduct = async (_id) => {
 
 //Borrar producto
 //deleteProduct('63e2f98dab4b8df5d82ead97')
+

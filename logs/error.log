@@ -31,3 +31,4 @@
 {"level":50,"time":1675653414583,"pid":6128,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: [object Object]"}
 {"level":50,"time":1675653594950,"pid":7704,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: [object Object]"}
 {"level":50,"time":1675818797187,"pid":5068,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"Sunglasses\" (type string) at path \"_id\" for model \"products\""}
+{"level":50,"time":1675822359779,"pid":3664,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"Evelyn4@gmail.com\" (type string) at path \"_id\" for model \"users\""}
