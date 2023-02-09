@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "Set NODE_ENV=development node src/server.js",
-    "start": "node src/server.js"
+    "start:dev": "set NODE_ENV=development&& node src/main.js",
+    "start": "set NODE_ENV=production&& node src/main.js"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +23,11 @@
     "pino": "^8.8.0",
     "pino-pretty": "^9.1.1",
     "twilio": "^3.84.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "supertest": "^6.3.3"
   }
 }
