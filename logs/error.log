@@ -32,3 +32,8 @@
 {"level":50,"time":1675653594950,"pid":7704,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: [object Object]"}
 {"level":50,"time":1675818797187,"pid":5068,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"Sunglasses\" (type string) at path \"_id\" for model \"products\""}
 {"level":50,"time":1675822359779,"pid":3664,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: CastError: Cast to ObjectId failed for value \"Evelyn4@gmail.com\" (type string) at path \"_id\" for model \"users\""}
+{"level":50,"time":1676238154639,"pid":4108,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: MongoNotConnectedError: Client must be connected before running operations"}
+{"level":50,"time":1676238203640,"pid":3432,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: MongoNotConnectedError: Client must be connected before running operations"}
+{"level":50,"time":1676238549386,"pid":8988,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: MongoNotConnectedError: Client must be connected before running operations"}
+{"level":50,"time":1676238574036,"pid":10872,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: MongoNotConnectedError: Client must be connected before running operations"}
+{"level":50,"time":1676238742677,"pid":10944,"hostname":"DESKTOP-3LKK6TC","msg":"unexpected error: MongoNotConnectedError: Client must be connected before running operations"}
